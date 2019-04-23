@@ -83,6 +83,8 @@ header nav {
 
 header nav a {
 	padding: 0px 20px 10px 0px;
+	text-decoration: none;
+	color: grey;
 }
 
 header img {
@@ -108,6 +110,12 @@ header img {
 
 .top-content-left h1 {
 	font-size: 50px;
+}
+
+.top-content-left button {
+	border: 1px solid black;
+	padding: 5px 20px;
+	background-color: white;
 }
 
 .top-content img {

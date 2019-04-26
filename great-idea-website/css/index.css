@@ -49,12 +49,16 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+		font-family: 'Titillium Web', sans-serif;
+}
+
+html {
+	box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,3 +68,96 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+.container {
+	width: 700px;
+	margin: 0 auto;
+}
+
+header {
+	margin: 20px 0;
+}
+
+header nav {
+	display: inline-block;
+}
+
+header nav a {
+	padding: 0px 20px 10px 0px;
+	text-decoration: none;
+	color: grey;
+}
+
+header img {
+	display: inline-block;
+	margin-left: 50px;
+}
+
+.top-content {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.top-content .top-content-left {
+	display: inline-block;
+	width: 60%;
+	vertical-align: top;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.top-content-left h1 {
+	font-size: 50px;
+}
+
+.top-content-left button {
+	border: 1px solid black;
+	padding: 5px 20px;
+	background-color: white;
+}
+
+.top-content img {
+	display: inline-block;
+	width: 35%;
+	vertical-align: top;
+}
+
+.middle-content {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 35px 0;
+	box-sizing: border-box;
+}
+
+.middle-content-top section {
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+	margin-bottom: 20px;
+}
+
+.middle-content img {
+	width: 100%;;
+}
+
+.middle-content-bottom section {
+	display: inline-block;
+	width: 32.5%;
+	vertical-align: top;
+	margin-top: 20px;
+}
+
+footer {
+	margin-top: 20px;
+}
+
+footer .company-address p {
+	text-transform: uppercase;
+}
+
+footer .copyright {
+	text-align: center;
+	margin-top: 30px;
+}
